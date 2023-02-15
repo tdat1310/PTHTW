@@ -1,0 +1,22 @@
+:root{
+    --font-1:'Roboto', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:var(--font-1);
+    transition: .25s;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    width:100%;
+}
