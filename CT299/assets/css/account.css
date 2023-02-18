@@ -1,6 +1,7 @@
 body {
     font-family: "Montserrat", sans-serif;
     background: #f7edd5;
+    user-select: none;
   }
   
   .container {
@@ -148,11 +149,7 @@ body {
     width: 130%;
     overflow: hidden;
   }
-  /* .form .form-peice.switched {
-    transform: translateX(-100%);
-    width: 100%;
-    left: 0;
-  } */
+  
   .login.form-peice{
     transform: translateX(-100%);
     width: 100%;
@@ -228,7 +225,6 @@ body {
     position: absolute;
     bottom: -20px;
     right: 0;
-    display: none;
   }
   .form form input[type=password] {
     color: #f95959;

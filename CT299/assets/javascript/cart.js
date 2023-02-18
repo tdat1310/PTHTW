@@ -28,6 +28,8 @@ function add_cart(){
             create_list_cart();
             sum_price();
             show_quantity_cart();
+            show_checkout()
+
         })
     })
     function show_quantity_cart(){
@@ -160,13 +162,42 @@ function add_cart(){
         })
     }
 
+    function show_checkout(){
+        const data=JSON.parse(localStorage.getItem("list_cart"))
+        const btn_checkout=document.querySelector(".body-cart .main-cart .checkout")
+        if(data.length>0){
+            btn_checkout.style.display="block"
+        }
+        btn_checkout.addEventListener("click",e=>{
+            const a =document.createElement("a")
+            a.href="./checkout.html"
+            a.click()
+        })
+    }
+
     create_list_cart();
     detele_cart();
     increase_quantity()
     sum_price();
+    show_checkout()
+
 }
 add_cart();
 
 
+function show_quatity_cart(){
+    const quantity_cart=document.querySelector(".cart .quantity-items-cart")
+    const data=JSON.parse(localStorage.getItem("list_cart"))
+    let list_cart
+    data?list_cart=data:list_cart=[]
+    quantity_cart.innerHTML=list_cart.length;
+
+    if(list_cart.length>0){
+        quantity_cart.style.transform="scale(1)"
+    }else {
+        quantity_cart.style.transform="scale(0)"
+    }
+}
+show_quatity_cart()
 
 

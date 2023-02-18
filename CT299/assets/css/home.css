@@ -294,6 +294,22 @@
 .header .body-cart .list-product-cart .product-cart-items .left-item:hover img{
     transform: scale(1.2);
 }
+.header .body-cart .main-cart .checkout{
+    position: fixed;
+    background:var(--line-cart);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.265);
+    cursor: pointer;
+    color:white;
+    bottom:4%;
+    right:3%;
+    padding:10px 20px;
+    font-weight: bold;
+    display: none;
+}
+.header .body-cart .main-cart .checkout:active{
+    opacity: .5;
+    transform: scale(1.1);
+}
 .header .body-cart .list-product-cart .product-cart-items .center-item{
     display:flex;
     flex-direction: column;
@@ -408,6 +424,7 @@
 .right-headline .cart{
     position: relative;
 }
+
 .right-headline .cart .quantity-items-cart{
     position: absolute;
     top:-6px;

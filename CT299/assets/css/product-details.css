@@ -1,0 +1,249 @@
+root{
+    --main-bg:#F8F9FD;
+    --main-color:#E99C2E;
+    --text-color-1:#5F5B57;
+    --text-color-2:#998D80;
+    --text-color-3:#A09E9C;
+    --text-size-1:30px;
+    --text-size-2:18px;
+    --text-size-3:16px;
+    --text-size-4:14px;
+    --text-size-5:13px;
+    --title-size:48px;
+    --title-size-2:24px;
+    --line-cart:#33383C;
+    --bg-body-6:#F8F9FD;
+
+}
+.link-address{
+    margin-top: 20px;
+    display:flex;
+}
+.link-address li{
+    border-right:1px solid var(--text-color-3);
+    padding-inline:10px;
+}
+.link-address li:hover a{
+    color:var(--line-cart);
+}
+.link-address li:last-child{
+    border-right:none;
+}
+.link-address a{
+    color:var(--text-color-3)
+}
+.body-detail{
+    margin-top: 30px;
+    display:grid;
+    grid-template-columns: 1.5fr 4fr 4fr;
+    grid-column-gap: 5%;
+}
+.body-detail .left-detail{
+    margin-top: 20px;
+    max-height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.body-detail .left-detail .control{
+    height:100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.body-detail .left-detail .control ion-icon{
+    font-size: 30px;
+    color:var(--text-color-1);
+    cursor: pointer;
+    z-index: 10;
+}
+.body-detail .left-detail .control ion-icon:hover{
+    color:var(--line-cart);
+}
+.body-detail .left-detail .control ion-icon:nth-child(1):hover{
+    transform: translateY(-8px);
+}
+.body-detail .left-detail .control ion-icon:nth-child(2):hover{
+    transform: translateY(8px);
+}
+.body-detail .left-detail .list-img .img-items:nth-child(1){
+    border: 1px solid var(--text-color-1);
+    margin-top: 0;
+}
+.body-detail .left-detail .list-img .img-items{
+    padding:20%;
+    opacity: .6;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    border: 1px solid transparent;
+
+}
+.body-detail .left-detail .list-img .img-items:hover{
+    border: 1px solid var(--text-color-1);
+    opacity: 1;
+}
+.body-detail .left-detail .list-img .img-items:nth-child(1){
+    border: 1px solid var(--text-color-1);
+    opacity: 1; 
+}
+.body-detail .left-detail .list-img .img-items img{
+    width:80%;
+}
+.body-detail .center-detail{
+    max-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.body-detail .center-detail img{
+    max-width: 250px;
+    width:200%;
+    transform: translateX(-25%);
+}
+
+.body-detail .right-detail .info-product{
+    display: flex;
+    flex-direction: column;
+    gap:25px
+}
+.body-detail .right-detail .info-product .product-price{
+    display: flex;
+    align-items: center;
+    gap:5px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.body-detail .right-detail .info-product .material,.des-1,.size,.id-product,.ctl{
+    display: flex;
+    align-items: center;
+    gap:8px;
+}
+.body-detail .right-detail .info-product .material p,.size p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.body-detail .right-detail .info-product .des-1 a{
+    text-decoration:underline;
+    color:var(--text-color-1);
+    font-weight: bold;
+}
+.body-detail .right-detail .info-product .material span,.size span{
+    border:.6px solid var(--text-color-3);
+    padding:3px 5px ;
+}
+.body-detail .right-detail .add-cart{
+    display: flex;
+    gap:15px;
+    margin-block:15px ;
+}
+.body-detail .right-detail .add-cart .quantity{
+    display:flex;
+    align-items: center;
+
+}
+.body-detail .right-detail .add-cart .quantity .left,.center,.right{
+    border:1px solid var(--text-color-1);
+    padding:10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color:var(--text-color-1);
+}
+.body-detail .right-detail .add-cart .left:active,.right:active{
+    background-color:#33383c56;
+}
+.body-detail .right-detail .add-cart .btn-by-now{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline:25px;
+    font-size: var(--text-size-2);
+    font-weight: bold;
+    background: var(--line-cart);
+    color:white;
+    cursor:pointer;
+}
+.body-detail .right-detail .add-cart .btn-by-now:active{
+    opacity: .4;
+}
+.body-detail .right-detail .add-cart .btn-add-cart{
+    border:1px solid var(--line-cart);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline:25px;
+    font-weight: bold;
+    color:var(--text-color-1);
+    font-size: var(--text-size-2);
+}
+.body-detail .right-detail .add-cart .btn-add-cart:active{
+    background-color: #33383ca4
+}
+.body-detail .right-detail .contact-us{
+    padding-left:25%;
+}
+.body-detail .right-detail .contact-us span{
+    color:red;
+}
+.body-detail .right-detail .status-product .headline-status{
+    border-bottom:1px solid var(--text-color-3);
+    display:flex;
+    gap:10px;
+    margin-top: 20px ;
+}
+.body-detail .right-detail .status-product .headline-status .healine-items{
+    padding-inline:10px ;
+    color:var(--text-color-1);
+    font-weight: bold;
+    font-size: var(--text-size-2);
+    padding-bottom:5px;
+    cursor: pointer ;
+    border-bottom:2px solid transparent;
+}
+
+.body-detail .right-detail .status-product .headline-status .healine-items.active{
+    border-bottom:2px solid var(--main-color);
+}
+.content-status{
+    padding-top:30px;
+}
+.content-status .list-content .content-items p{
+    padding-bottom:50px;
+}
+.content-status .list-content .content-items .cmt{
+    background:var(--bg-body-6);
+    padding:10px 30px ;
+}
+.content-status .list-content .content-items .cmt h2{
+    margin-bottom: 20px;
+}
+.content-status .list-content .content-items.baohanh{
+    display: none;
+    margin-top: 30px;
+}
+.content-status .list-content .content-items.baohanh .items-baohanh{
+    display: flex;
+}
+.content-status .list-content .content-items.baohanh .items-baohanh ion-icon{
+    font-size: 30px;
+    flex-basis: 5%;
+    flex-shrink: 0;
+    color:green;
+}
+
+.content-status .list-content .content-items.vanchuyen{
+    margin-top: 30px;
+    display:none
+}
+.content-status .list-content .content-items.vanchuyen h2{
+    font-weight: 500;
+    padding-bottom:20px;
+}
+.content-status .list-content .content-items.vanchuyen ul li{
+    padding-block:10px;
+}
